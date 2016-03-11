@@ -1,0 +1,30 @@
+
+	<section layout="column" flex layout-align="center center" class="login">
+			<md-card class="md-whiteframe-4dp">
+				<md-toolbar class="loginHeader">
+					<div layout="column" layout-padding layout-align="center center">
+						<div class="iconHeader">
+							<md-icon md-svg-icon="home" style="color: white;" aria-label="Home"></md-icon>
+						</div>
+						<div class="md-headline md-padding">Login</div>
+					</div>
+				</md-toolbar>
+				<md-card-content>
+					<form name="login" method="post" ng-submit="doLogin(loginForm)">
+						<md-input-container class="md-block">
+							<label for="email">Email</label>
+							<input type="email" name="email" ng-model="loginParams.email" required />
+						</md-input-container>
+						<md-input-container class="md-block">
+							<label for="password">Password</label>
+							<input type="password" name="password" ng-model="loginParams.password" required />
+						</md-input-container>
+						<md-input-container class="md-block">
+							<div layout="row" layout-align="center center">
+								<md-button type="submit" class="md-raised md-accent" flex="50">Entrar</md-button>
+							</div>
+						</md-input-container>
+					</form>
+				</md-card-content>
+			</md-card>
+	</section>

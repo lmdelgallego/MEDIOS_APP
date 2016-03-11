@@ -1,0 +1,21 @@
+<md-content layout-padding layout-fill>
+	<div>
+		<h1>{{title}}</h1>
+		<form method="post" ng-submit="saveClient()">
+			<md-input-container class="md-icon-float md-block">
+			<!-- Use floating label instead of placeholder -->
+				<label>NIT</label>
+				<md-icon md-svg-icon="numeric" style="color: black;" aria-label="Home"></md-icon>
+				<input ng-model="client.nit" type="text">
+			</md-input-container>
+			<md-input-container class="md-icon-float md-block">
+			<!-- Use floating label instead of placeholder -->
+				<label>Nombre</label>
+				<md-icon md-svg-icon="account-circle" style="color: black;" class=""></md-icon>
+				<input ng-model="client.name" type="text">
+			</md-input-container>
+			<md-button class="md-primary md-raised md-hue-1"  type="submit" flex="50">{{button}}</md-button>
+		</form>
+
+	</div>
+</md-content>

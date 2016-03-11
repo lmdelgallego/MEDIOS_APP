@@ -1,0 +1,32 @@
+<md-sidenav md-component-id="left" md-is-locked-open="$mdMedia('gt-sm')" class="md-sidenav-left md-whiteframe-4dp site-sidenav" tapindex='-1' >
+
+	<md-toolbar class="md-theme-indigo">
+       <h1 class="md-toolbar-tools">Sonovista<samll>OP</samll></h1>
+      </md-toolbar>
+	<md-content flex role="navegation" class="sidenav-content">
+		<md-list-item ng-click="toogleLeftMenu()" ui-sref="client">
+			<md-icon md-svg-icon="cached"></md-icon>
+			<p>Cliente</p>
+		</md-list-item>
+		<md-list-item ng-click="toogleLeftMenu()" ui-sref="about">
+			<md-icon md-svg-icon="cached"></md-icon>
+			<p>About</p>
+		</md-list-item>
+		<md-list-item ng-click="toogleLeftMenu()"  ui-sref="about">
+			<md-icon md-svg-icon="cached"></md-icon>
+			<p>Cliente</p>
+		</md-list-item>
+	</md-content>
+</md-sidenav>
+
+<div layout="column" flex class="layout-column flex">
+
+  <md-toolbar class="md-toolbar-tools " layout="row" >
+  	<md-button class="menu" aria-label="Menu" hide-gt-sm ng-click="toogleLeftMenu()">
+			<md-icon md-svg-icon="menu" aria-label="Menu"></md-icon>
+  	</md-button>
+  	<h3 ng-bind-html="title ">Sh</h3>
+  </md-toolbar>
+  <md-content layout="row" id="content" flex layout-padding ui-view></md-content>
+
+</div>
